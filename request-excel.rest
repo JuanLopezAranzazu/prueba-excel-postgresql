@@ -1,0 +1,32 @@
+GET http://localhost:3001/api/v1/excel
+Content-Type: application/json
+
+{
+  "filePath": "./test.xlsx"
+}
+
+###
+
+POST http://localhost:3001/api/v1/excel
+Content-Type: application/json
+
+{
+  "filePath": "./test.xlsx",
+  "workSheetColumnNames": ["Nombre", "Correo"],
+  "workSheetName": "data"
+}
+
+###
+
+GET http://localhost:3001/api/v1/users
+
+###
+
+PUT http://localhost:3001/api/v1/users/2
+Content-Type: application/json
+
+{
+  "fullname": "Esteban Aranzazu",
+  "email": "estebanaranzazu@gmail.com",
+  "password": "root123"
+}
